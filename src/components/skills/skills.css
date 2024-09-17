@@ -1,0 +1,44 @@
+/* skills.css */
+
+  /* Tools & Technologies styling */
+  .tools-tech-list {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .tool-item {
+    display: flex;
+    align-items: center;
+    background-color: #76639021; /* Blue background */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .tool-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .tool-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 0.5rem;
+  }
+  
+  .tool-name {
+    color: var(--text-color); /* White text color for better contrast */
+    font-weight: bold;
+  }
+  
+  /* Coding Platforms styling */
+  .coding-platforms{
+    width: 200px;
+  }
+
+  .codechef{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+  }
