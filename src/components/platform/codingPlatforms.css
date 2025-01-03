@@ -1,0 +1,132 @@
+.platforms-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+  }
+  
+  .main-title {
+    text-align: center;
+    color: #2d3748;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  
+  .main-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #ff295b, #ff87a3);
+    border-radius: 2px;
+  }
+  
+  .platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .platform-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .platform-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .platform-header {
+    background: linear-gradient(to right, #ff295b, #fc688a);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .platform-name {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .platform-content {
+    padding: 1.5rem;
+  }
+  
+  .platform-image-container {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .platform-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .platform-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .platform-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .stat-label {
+    color: #4a5568;
+    font-weight: 500;
+  }
+  
+  .stat-value {
+    color: #2d3748;
+    font-weight: 600;
+  }
+  
+  .stat-description {
+    text-align: center;
+    color: #718096;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #e2e8f0;
+  }
+  
+  @media (max-width: 768px) {
+    .platforms-container {
+      padding: 1rem;
+    }
+  
+    .main-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .platforms-grid {
+      grid-template-columns: 1fr;
+    }
+  }

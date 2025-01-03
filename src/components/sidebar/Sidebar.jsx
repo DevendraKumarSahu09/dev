@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./sidebar.css";
-import Logo from "../../assets/dlogo.png"; 
+import Logo from "../../assets/dlogo.png";
 
 const Sidebar = () => {
     const [toggle, showMenu] = useState(false);
@@ -10,7 +10,6 @@ const Sidebar = () => {
             <a href="#home" className="nav_logo">
                 <img src={Logo} alt="" />
             </a>
-
             <nav className="nav">
                 <div className="nav_menu">
                     <ul className="nav_list">
@@ -24,11 +23,6 @@ const Sidebar = () => {
                                 <i className="icon-user-following"></i>
                             </a>
                         </li>
-                        {/* <li className="nav_item">
-                            <a href="#services" className="nav_link">
-                                <i className="icon-briefcase"></i>
-                            </a>
-                        </li> */}
                         <li className="nav_item">
                             <a href="#resume" className="nav_link">
                                 <i className="icon-graduation"></i>
@@ -36,12 +30,22 @@ const Sidebar = () => {
                         </li>
                         <li className="nav_item">
                             <a href="#work" className="nav_link">
-                                <i className="icon-layers"></i>
+                                <i className="icon-folder"></i>
                             </a>
                         </li>
                         <li className="nav_item">
                             <a href="#skills" className="nav_link">
-                                <i className="icon-star"></i>
+                                <i className="fas fa-laptop-code"></i>
+                            </a>
+                        </li>
+                        <li className="nav_item">
+                            <a href="#codePlatform" className="nav_link">
+                                <i className="fas fa-terminal"></i>
+                            </a>
+                        </li>
+                        <li className="nav_item">
+                            <a href="#awards" className="nav_link">
+                                <i className="icon-trophy"></i>
                             </a>
                         </li>
                         <li className="nav_item">
@@ -52,12 +56,10 @@ const Sidebar = () => {
                     </ul>
                 </div>
             </nav>
-
             <div className="nav_footer">
-                <span className="copyright">&copy; 2024 - 2025.</span>
+                <span className="copyright">&copy; 2025.</span>
             </div>
         </aside>
-
         <div className={toggle ? "nav__toggle nav__toggle-open" : "nav__toggle"} onClick={() => showMenu(!toggle)}>
             <i className="icon-menu"></i>
         </div>

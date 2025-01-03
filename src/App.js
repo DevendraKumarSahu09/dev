@@ -16,6 +16,9 @@ import Contact from "./components/contact/Contact";
 import { Toggle } from "./components/toggle/Toggle";
 import useLocalStorage from "use-local-storage";
 
+import CodingPlatforms from "./components/platform/CodingPlatforms";
+import Achievements from "./components/awards/Achievements";
+
 function App() {
   const preferrence = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const [isLight, setIsLight] = useLocalStorage("isLight", preferrence);
@@ -26,7 +29,7 @@ function App() {
   
 
   return (
-    <div className='App' data-theme={isLight ? "dark" : "light"}>
+    <div className='App' data-theme={isLight ? "light" : "dark"}>
       <Toggle isChecked={isLight} handleChange={handleChange} />
       <Sidebar />
       <main className="main">
@@ -39,6 +42,8 @@ function App() {
         {/* <Pricing/> */}
         {/* <Testinomials/> */}
         {/* <Blog/> */}
+        <CodingPlatforms/>
+        <Achievements/>
         <Contact />
       </main>
     </div>

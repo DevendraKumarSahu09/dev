@@ -20,7 +20,7 @@ const About = () => {
             ▸ I am Devendra Sahu, a student at VIT Bhopal, studying Computer Science and Engineering with specialization in Health Informatics. I enjoy working with the MERN stack, which includes technologies like MongoDB, Express.js, React, and Node.js. <br />
               ▸ Problem-solving is my passion, and I love tackling challenges to find creative solutions. <br />
               ▸ My goal is to use my skills to make a positive impact in the field of technology and beyond.</div>
-            <a href="https://drive.google.com/file/d/1d73VXcDxeGYfxsuYWldjzzAC5l2BVagE/view?usp=sharing" target='_blank' className="btn">
+            <a href="https://drive.google.com/file/d/1pX-9VVglvQfAa-K-V_gCcvWvb6alHi_4/view?usp=sharing" target='_blank' rel="noreferrer" className="btn">
               My Resume
             </a>
           </div>
