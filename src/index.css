@@ -51,7 +51,7 @@
   --fill-color: #d7dafc; /* dark theme fill color */
 }
 
-[data-theme="dark"]{
+[data-theme="light"]{
   --title-color: hsl(244, 24%, 26%);
   --text-color: hsl(244, 16%, 43%);
   --body-color: hsl(260, 60%, 98%);
