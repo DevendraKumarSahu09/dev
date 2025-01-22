@@ -6,7 +6,7 @@ const Data = [
       year: "2021 - 2025",
       title: "Bachelor of Technology",
       major: "Branch: Computer Science and Engineering with specialization in Health Informatics",
-      grade: "CGPA: 8.77/10",
+      grade: "CGPA: 8.79/10",
       institution: "University: VIT Bhopal",
 
     },
